@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2515C721D378CB40036E473 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C711D378CB40036E473 /* CustomTabBar.m */; };
+		F2515C751D378D580036E473 /* UIView+CustomSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C741D378D580036E473 /* UIView+CustomSize.m */; };
 		F265F8EF1D34B1C7002F3B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F8EE1D34B1C7002F3B9E /* main.m */; };
 		F265F8F21D34B1C7002F3B9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F8F11D34B1C7002F3B9E /* AppDelegate.m */; };
 		F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F265F8F91D34B1C7002F3B9E /* Assets.xcassets */; };
@@ -33,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2515C701D378CB40036E473 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		F2515C711D378CB40036E473 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		F2515C731D378D580036E473 /* UIView+CustomSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomSize.h"; sourceTree = "<group>"; };
+		F2515C741D378D580036E473 /* UIView+CustomSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomSize.m"; sourceTree = "<group>"; };
 		F265F8EA1D34B1C7002F3B9E /* 百思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F265F8EE1D34B1C7002F3B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F265F8F01D34B1C7002F3B9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 				F27BAE811D34D57A00C94209 /* ZBTabBarViewController.h */,
 				F27BAE821D34D57A00C94209 /* ZBTabBarViewController.m */,
 				F2AB0C9B1D360F6A00F388C2 /* PrefixHeader.pch */,
+				F2515C701D378CB40036E473 /* CustomTabBar.h */,
+				F2515C711D378CB40036E473 /* CustomTabBar.m */,
+				F2515C731D378D580036E473 /* UIView+CustomSize.h */,
+				F2515C741D378D580036E473 /* UIView+CustomSize.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -206,7 +216,7 @@
 		F265F8E21D34B1C7002F3B9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = ZB;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "赵博";
 				TargetAttributes = {
@@ -273,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2515C721D378CB40036E473 /* CustomTabBar.m in Sources */,
 				F265F8F21D34B1C7002F3B9E /* AppDelegate.m in Sources */,
+				F2515C751D378D580036E473 /* UIView+CustomSize.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,
 				F27BAE831D34D57A00C94209 /* ZBTabBarViewController.m in Sources */,
 			);

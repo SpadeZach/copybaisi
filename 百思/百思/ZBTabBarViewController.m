@@ -7,7 +7,7 @@
 //
 
 #import "ZBTabBarViewController.h"
-
+#import "CustomTabBar.h"
 @interface ZBTabBarViewController ()
 
 @end
@@ -16,20 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //获取所有按钮
-    UITabBarItem *items = [UITabBarItem appearance];
-    //点击状态下文字颜色 字号
-    NSMutableDictionary *selectedattrs = [NSMutableDictionary dictionary];
-    selectedattrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-    //属性放在所有按钮
-    [items setTitleTextAttributes:selectedattrs forState:UIControlStateSelected];
-    
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
-    
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    //设置多有UITabBarItem的文字属性
+    [self setupTitleTextAttributes];
+    //添加子控制器
+    [self setupChildViewControllers];
+    //自定义TabBar
+    [self setValue:[[CustomTabBar alloc] init]forKeyPath:@"tabBar"];
 }
 /**
  *  初始化一个子控制器
@@ -51,7 +43,23 @@
 
     [self addChildViewController:vc];
 }
-
+- (void)setupTitleTextAttributes{
+    //获取所有按钮
+    UITabBarItem *items = [UITabBarItem appearance];
+    //点击状态下文字颜色 字号
+    NSMutableDictionary *selectedattrs = [NSMutableDictionary dictionary];
+    selectedattrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    //属性放在所有按钮
+    [items setTitleTextAttributes:selectedattrs forState:UIControlStateSelected];
+}
+- (void)setupChildViewControllers{
+    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    
+    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    
+    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

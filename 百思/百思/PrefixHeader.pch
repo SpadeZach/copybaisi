@@ -9,10 +9,12 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 #ifdef __OBJC__
+#import "UIView+CustomSize.h"
 //调试阶段
 #ifdef DEBUG
 //输出日志
 #define CustomLog(...) NSLog(__VA_ARGS__)
+#define CustomFunc  CustomLog(@"%s",__func__)
 #else
 #define CustomLog(...)
 #endif
