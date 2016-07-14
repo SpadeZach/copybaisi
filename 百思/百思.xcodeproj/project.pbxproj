@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2515C721D378CB40036E473 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C711D378CB40036E473 /* CustomTabBar.m */; };
-		F2515C751D378D580036E473 /* UIView+CustomSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C741D378D580036E473 /* UIView+CustomSize.m */; };
+		F2515C951D379E790036E473 /* EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C941D379E790036E473 /* EssenceViewController.m */; };
+		F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C971D379E870036E473 /* FirstNewViewController.m */; };
+		F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C9A1D379E980036E473 /* AttentionViewController.m */; };
+		F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515C9D1D379EA30036E473 /* MeViewController.m */; };
+		F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CA11D379FDA0036E473 /* AppDelegate.m */; };
+		F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */; };
+		F2515CAD1D379FDA0036E473 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CA81D379FDA0036E473 /* CustomTabBar.m */; };
+		F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */; };
 		F265F8EF1D34B1C7002F3B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F8EE1D34B1C7002F3B9E /* main.m */; };
-		F265F8F21D34B1C7002F3B9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F8F11D34B1C7002F3B9E /* AppDelegate.m */; };
 		F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F265F8F91D34B1C7002F3B9E /* Assets.xcassets */; };
 		F265F9081D34B1C7002F3B9E /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F9071D34B1C7002F3B9E /* __Tests.m */; };
 		F265F9131D34B1C7002F3B9E /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F9121D34B1C7002F3B9E /* __UITests.m */; };
-		F27BAE831D34D57A00C94209 /* ZBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F27BAE821D34D57A00C94209 /* ZBTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F2515C701D378CB40036E473 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
-		F2515C711D378CB40036E473 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
-		F2515C731D378D580036E473 /* UIView+CustomSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomSize.h"; sourceTree = "<group>"; };
-		F2515C741D378D580036E473 /* UIView+CustomSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomSize.m"; sourceTree = "<group>"; };
+		F2515C931D379E790036E473 /* EssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EssenceViewController.h; sourceTree = "<group>"; };
+		F2515C941D379E790036E473 /* EssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EssenceViewController.m; sourceTree = "<group>"; };
+		F2515C961D379E870036E473 /* FirstNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstNewViewController.h; sourceTree = "<group>"; };
+		F2515C971D379E870036E473 /* FirstNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstNewViewController.m; sourceTree = "<group>"; };
+		F2515C991D379E980036E473 /* AttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttentionViewController.h; sourceTree = "<group>"; };
+		F2515C9A1D379E980036E473 /* AttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttentionViewController.m; sourceTree = "<group>"; };
+		F2515C9C1D379EA30036E473 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		F2515C9D1D379EA30036E473 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		F2515CA01D379FDA0036E473 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2515CA11D379FDA0036E473 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2515CA31D379FDA0036E473 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F2515CA41D379FDA0036E473 /* UIView+CustomSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomSize.h"; sourceTree = "<group>"; };
+		F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomSize.m"; sourceTree = "<group>"; };
+		F2515CA71D379FDA0036E473 /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
+		F2515CA81D379FDA0036E473 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
+		F2515CA91D379FDA0036E473 /* ZBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTabBarViewController.h; sourceTree = "<group>"; };
+		F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTabBarViewController.m; sourceTree = "<group>"; };
 		F265F8EA1D34B1C7002F3B9E /* 百思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F265F8EE1D34B1C7002F3B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F265F8F01D34B1C7002F3B9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F265F8F11D34B1C7002F3B9E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F265F8F91D34B1C7002F3B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F265F8FE1D34B1C7002F3B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F265F9031D34B1C7002F3B9E /* 百思Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,9 +66,6 @@
 		F265F90E1D34B1C7002F3B9E /* 百思UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F265F9121D34B1C7002F3B9E /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		F265F9141D34B1C7002F3B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F27BAE811D34D57A00C94209 /* ZBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTabBarViewController.h; sourceTree = "<group>"; };
-		F27BAE821D34D57A00C94209 /* ZBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTabBarViewController.m; sourceTree = "<group>"; };
-		F2AB0C9B1D360F6A00F388C2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,171 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2515C831D379E450036E473 /* 关注-Attention */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C841D379E450036E473 /* Controller */,
+				F2515C851D379E450036E473 /* Model */,
+				F2515C861D379E450036E473 /* View */,
+			);
+			path = "关注-Attention";
+			sourceTree = "<group>";
+		};
+		F2515C841D379E450036E473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C991D379E980036E473 /* AttentionViewController.h */,
+				F2515C9A1D379E980036E473 /* AttentionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2515C851D379E450036E473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2515C861D379E450036E473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2515C871D379E450036E473 /* 精华-Essence */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C881D379E450036E473 /* Controller */,
+				F2515C891D379E450036E473 /* Model */,
+				F2515C8A1D379E450036E473 /* View */,
+			);
+			path = "精华-Essence";
+			sourceTree = "<group>";
+		};
+		F2515C881D379E450036E473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C931D379E790036E473 /* EssenceViewController.h */,
+				F2515C941D379E790036E473 /* EssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2515C891D379E450036E473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2515C8A1D379E450036E473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2515C8B1D379E450036E473 /* 我-Me */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C8C1D379E450036E473 /* Controller */,
+				F2515C8D1D379E450036E473 /* Model */,
+				F2515C8E1D379E450036E473 /* View */,
+			);
+			path = "我-Me";
+			sourceTree = "<group>";
+		};
+		F2515C8C1D379E450036E473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C9C1D379EA30036E473 /* MeViewController.h */,
+				F2515C9D1D379EA30036E473 /* MeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2515C8D1D379E450036E473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2515C8E1D379E450036E473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2515C8F1D379E450036E473 /* 新帖-FirstNew */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C901D379E450036E473 /* Controller */,
+				F2515C911D379E450036E473 /* Model */,
+				F2515C921D379E450036E473 /* View */,
+			);
+			path = "新帖-FirstNew";
+			sourceTree = "<group>";
+		};
+		F2515C901D379E450036E473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2515C961D379E870036E473 /* FirstNewViewController.h */,
+				F2515C971D379E870036E473 /* FirstNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2515C911D379E450036E473 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2515C921D379E450036E473 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2515C9F1D379FDA0036E473 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				F2515CA01D379FDA0036E473 /* AppDelegate.h */,
+				F2515CA11D379FDA0036E473 /* AppDelegate.m */,
+				F2515CA21D379FDA0036E473 /* Category */,
+				F2515CA61D379FDA0036E473 /* Controller */,
+			);
+			name = "Other-其他";
+			path = "我-Me/View/Other-其他";
+			sourceTree = "<group>";
+		};
+		F2515CA21D379FDA0036E473 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F2515CA31D379FDA0036E473 /* PrefixHeader.pch */,
+				F2515CA41D379FDA0036E473 /* UIView+CustomSize.h */,
+				F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F2515CA61D379FDA0036E473 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2515CA71D379FDA0036E473 /* CustomTabBar.h */,
+				F2515CA81D379FDA0036E473 /* CustomTabBar.m */,
+				F2515CA91D379FDA0036E473 /* ZBTabBarViewController.h */,
+				F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		F265F8E11D34B1C7002F3B9E = {
 			isa = PBXGroup;
 			children = (
@@ -141,15 +318,11 @@
 		F265F9201D34B9AA002F3B9E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F265F8F01D34B1C7002F3B9E /* AppDelegate.h */,
-				F265F8F11D34B1C7002F3B9E /* AppDelegate.m */,
-				F27BAE811D34D57A00C94209 /* ZBTabBarViewController.h */,
-				F27BAE821D34D57A00C94209 /* ZBTabBarViewController.m */,
-				F2AB0C9B1D360F6A00F388C2 /* PrefixHeader.pch */,
-				F2515C701D378CB40036E473 /* CustomTabBar.h */,
-				F2515C711D378CB40036E473 /* CustomTabBar.m */,
-				F2515C731D378D580036E473 /* UIView+CustomSize.h */,
-				F2515C741D378D580036E473 /* UIView+CustomSize.m */,
+				F2515C871D379E450036E473 /* 精华-Essence */,
+				F2515C8F1D379E450036E473 /* 新帖-FirstNew */,
+				F2515C831D379E450036E473 /* 关注-Attention */,
+				F2515C8B1D379E450036E473 /* 我-Me */,
+				F2515C9F1D379FDA0036E473 /* Other-其他 */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -283,11 +456,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2515C721D378CB40036E473 /* CustomTabBar.m in Sources */,
-				F265F8F21D34B1C7002F3B9E /* AppDelegate.m in Sources */,
-				F2515C751D378D580036E473 /* UIView+CustomSize.m in Sources */,
+				F2515CAD1D379FDA0036E473 /* CustomTabBar.m in Sources */,
+				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
+				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
+				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
+				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
+				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
+				F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */,
+				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,
-				F27BAE831D34D57A00C94209 /* ZBTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "百思/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思/我-Me/View/Other-其他/Category/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,7 +603,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "百思/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "百思/我-Me/View/Other-其他/Category/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

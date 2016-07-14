@@ -8,6 +8,10 @@
 
 #import "ZBTabBarViewController.h"
 #import "CustomTabBar.h"
+#import "EssenceViewController.h"
+#import "FirstNewViewController.h"
+#import "AttentionViewController.h"
+#import "MeViewController.h"
 @interface ZBTabBarViewController ()
 
 @end
@@ -32,7 +36,7 @@
  *  @param selectedImage 选中图标
  */
 - (void)setupOneChildViewController:(UIViewController *)vc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage{
-    vc.view.backgroundColor = [UIColor whiteColor];
+ 
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     //加载图片
@@ -53,12 +57,12 @@
     [items setTitleTextAttributes:selectedattrs forState:UIControlStateSelected];
 }
 - (void)setupChildViewControllers{
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupOneChildViewController:[[EssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupOneChildViewController:[[FirstNewViewController alloc] init] title:@"新帖" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setupOneChildViewController:[[AttentionViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     
-    [self setupOneChildViewController:[[UIViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupOneChildViewController:[[MeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
