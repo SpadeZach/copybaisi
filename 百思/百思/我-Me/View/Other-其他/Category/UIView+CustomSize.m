@@ -28,6 +28,9 @@
 - (CGFloat)custom_CenterY{
     return self.center.y;
 }
+- (CGSize)custom_size{
+    return  self.frame.size;
+}
 
 - (void)setCustom_width:(CGFloat)custom_width{
     CGRect frame = self.frame;
@@ -60,5 +63,9 @@
     center.y  = custom_CenterY;
     self.center = center;
 }
-
+- (void)setCustom_size:(CGSize)custom_size{
+    CGRect frame = self.frame;
+    frame.size = custom_size;
+    self.frame = frame;
+}
 @end

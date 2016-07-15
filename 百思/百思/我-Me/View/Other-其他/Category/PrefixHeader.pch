@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 #ifdef __OBJC__
 #import "UIView+CustomSize.h"
+#import "UIBarButtonItem+BarButtonItemExtension.h"
 //调试阶段
 #ifdef DEBUG
 //输出日志

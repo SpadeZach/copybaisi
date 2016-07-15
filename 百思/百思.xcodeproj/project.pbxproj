@@ -19,6 +19,11 @@
 		F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F265F8F91D34B1C7002F3B9E /* Assets.xcassets */; };
 		F265F9081D34B1C7002F3B9E /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F9071D34B1C7002F3B9E /* __Tests.m */; };
 		F265F9131D34B1C7002F3B9E /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F9121D34B1C7002F3B9E /* __UITests.m */; };
+		F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E2C1D38AA4800AA00A7 /* ItemManage.m */; };
+		F2883E301D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */; };
+		F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */; };
+		F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E381D38B93600AA00A7 /* SettingViewController.m */; };
+		F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +71,16 @@
 		F265F90E1D34B1C7002F3B9E /* 百思UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F265F9121D34B1C7002F3B9E /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		F265F9141D34B1C7002F3B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2883E2B1D38AA4800AA00A7 /* ItemManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManage.h; sourceTree = "<group>"; };
+		F2883E2C1D38AA4800AA00A7 /* ItemManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManage.m; sourceTree = "<group>"; };
+		F2883E2E1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BarButtonItemExtension.h"; sourceTree = "<group>"; };
+		F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BarButtonItemExtension.m"; sourceTree = "<group>"; };
+		F2883E341D38B2E400AA00A7 /* RecommendAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendAttentionViewController.h; sourceTree = "<group>"; };
+		F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendAttentionViewController.m; sourceTree = "<group>"; };
+		F2883E371D38B93600AA00A7 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		F2883E381D38B93600AA00A7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		F2883E3A1D38BE1900AA00A7 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
+		F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +123,8 @@
 			children = (
 				F2515C991D379E980036E473 /* AttentionViewController.h */,
 				F2515C9A1D379E980036E473 /* AttentionViewController.m */,
+				F2883E341D38B2E400AA00A7 /* RecommendAttentionViewController.h */,
+				F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +191,8 @@
 			children = (
 				F2515C9C1D379EA30036E473 /* MeViewController.h */,
 				F2515C9D1D379EA30036E473 /* MeViewController.m */,
+				F2883E371D38B93600AA00A7 /* SettingViewController.h */,
+				F2883E381D38B93600AA00A7 /* SettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -231,6 +250,7 @@
 				F2515CA01D379FDA0036E473 /* AppDelegate.h */,
 				F2515CA11D379FDA0036E473 /* AppDelegate.m */,
 				F2515CA21D379FDA0036E473 /* Category */,
+				F2883E2A1D38AA2C00AA00A7 /* Tool */,
 				F2515CA61D379FDA0036E473 /* Controller */,
 			);
 			name = "Other-其他";
@@ -243,6 +263,8 @@
 				F2515CA31D379FDA0036E473 /* PrefixHeader.pch */,
 				F2515CA41D379FDA0036E473 /* UIView+CustomSize.h */,
 				F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */,
+				F2883E2E1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.h */,
+				F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -254,6 +276,8 @@
 				F2515CA81D379FDA0036E473 /* CustomTabBar.m */,
 				F2515CA91D379FDA0036E473 /* ZBTabBarViewController.h */,
 				F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */,
+				F2883E3A1D38BE1900AA00A7 /* CustomNavigationViewController.h */,
+				F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,6 +349,15 @@
 				F2515C9F1D379FDA0036E473 /* Other-其他 */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		F2883E2A1D38AA2C00AA00A7 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				F2883E2B1D38AA4800AA00A7 /* ItemManage.h */,
+				F2883E2C1D38AA4800AA00A7 /* ItemManage.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,12 +489,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */,
 				F2515CAD1D379FDA0036E473 /* CustomTabBar.m in Sources */,
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
+				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
+				F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */,
 				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
+				F2883E301D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m in Sources */,
+				F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */,
 				F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */,
 				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,

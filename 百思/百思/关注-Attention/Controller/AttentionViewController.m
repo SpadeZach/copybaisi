@@ -7,7 +7,7 @@
 //
 
 #import "AttentionViewController.h"
-
+#import "RecommendAttentionViewController.h"
 @interface AttentionViewController ()
 
 @end
@@ -18,8 +18,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = CommonBgColor;
+    //标题（不建议直接使用self.title）
+    self.navigationItem.title = @"我的关注";
+    
+    //左边按钮
+    UIBarButtonItem *buttonItem =[UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(tagClick)];
+    
+    self.navigationItem.leftBarButtonItem = buttonItem;
 }
+- (void)tagClick{
+    RecommendAttentionViewController *ecommendAttentionVC = [[RecommendAttentionViewController alloc] init];
 
+    [self.navigationController pushViewController:ecommendAttentionVC  animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

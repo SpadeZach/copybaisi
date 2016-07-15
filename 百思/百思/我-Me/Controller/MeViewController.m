@@ -7,7 +7,7 @@
 //
 
 #import "MeViewController.h"
-
+#import "SettingViewController.h"
 @interface MeViewController ()
 
 @end
@@ -17,8 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = CommonBgColor;
+    //标题（不建议直接使用self.title）
+    self.navigationItem.title = @"我的";
+    //右边-设置
+    UIBarButtonItem *settingItem =[UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    //右边- 月亮
+    UIBarButtonItem *moonButtonItem = [UIBarButtonItem  itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    self.navigationItem.rightBarButtonItems = @[ settingItem, moonButtonItem];
 }
 
+
+- (void)settingClick{
+    SettingViewController *tempVC = [[SettingViewController alloc] init];
+    [self.navigationController pushViewController:tempVC animated:YES];
+}
+- (void)moonClick{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
