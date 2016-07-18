@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
     self.interactivePopGestureRecognizer.delegate = self;
+    
 }
 /**
  *  重写push方法
@@ -33,7 +34,7 @@
     //默认控制器没push的时候个数为0，但是当super开始push以后个数是1，就不是最开始的控制器了，所以需要判读
     if (self.childViewControllers.count > 0) {
         //不是最早进来的就进来
-        //左上角
+        //左上角返回按钮
         UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
         [backBtn setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
