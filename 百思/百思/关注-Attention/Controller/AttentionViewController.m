@@ -26,6 +26,9 @@
     UIBarButtonItem *buttonItem =[UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(tagClick)];
     
     self.navigationItem.leftBarButtonItem = buttonItem;
+    
+   
+    
 }
 - (void)tagClick{
     //跳转-推荐关注

@@ -14,7 +14,9 @@
 		F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CA11D379FDA0036E473 /* AppDelegate.m */; };
 		F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */; };
 		F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */; };
+		F25839961D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */; };
 		F25BB36F1D3C884A00E554A3 /* AttentionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25BB36E1D3C884A00E554A3 /* AttentionViewController.xib */; };
+		F25BB3721D3CA4AB00E554A3 /* LoginReisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F25BB3711D3CA4AB00E554A3 /* LoginReisterTextField.m */; };
 		F265F8EF1D34B1C7002F3B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F8EE1D34B1C7002F3B9E /* main.m */; };
 		F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F265F8F91D34B1C7002F3B9E /* Assets.xcassets */; };
 		F265F9081D34B1C7002F3B9E /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F265F9071D34B1C7002F3B9E /* __Tests.m */; };
@@ -63,7 +65,11 @@
 		F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomSize.m"; sourceTree = "<group>"; };
 		F2515CA91D379FDA0036E473 /* ZBTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBTabBarViewController.h; sourceTree = "<group>"; };
 		F2515CAA1D379FDA0036E473 /* ZBTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBTabBarViewController.m; sourceTree = "<group>"; };
+		F25839941D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+UITextFieldPlace.h"; sourceTree = "<group>"; };
+		F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+UITextFieldPlace.m"; sourceTree = "<group>"; };
 		F25BB36E1D3C884A00E554A3 /* AttentionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttentionViewController.xib; sourceTree = "<group>"; };
+		F25BB3701D3CA4AB00E554A3 /* LoginReisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginReisterTextField.h; sourceTree = "<group>"; };
+		F25BB3711D3CA4AB00E554A3 /* LoginReisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginReisterTextField.m; sourceTree = "<group>"; };
 		F265F8EA1D34B1C7002F3B9E /* 百思.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F265F8EE1D34B1C7002F3B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F265F8F91D34B1C7002F3B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -277,6 +283,8 @@
 				F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */,
 				F2883E2E1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.h */,
 				F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */,
+				F25839941D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.h */,
+				F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -380,6 +388,8 @@
 				F2ECF9831D3B3B3400154E8A /* CustomTabBar.m */,
 				F2ECF9851D3B3B6700154E8A /* QuickLoginButton.h */,
 				F2ECF9861D3B3B6700154E8A /* QuickLoginButton.m */,
+				F25BB3701D3CA4AB00E554A3 /* LoginReisterTextField.h */,
+				F25BB3711D3CA4AB00E554A3 /* LoginReisterTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -520,10 +530,12 @@
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
+				F25839961D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m in Sources */,
 				F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */,
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
 				F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */,
+				F25BB3721D3CA4AB00E554A3 /* LoginReisterTextField.m in Sources */,
 				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
 				F2883E301D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m in Sources */,
 				F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */,

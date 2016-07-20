@@ -253,16 +253,19 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yee-Vy-qSz" userLabel="手机号">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yee-Vy-qSz" userLabel="手机号" customClass="LoginReisterTextField">
                             <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="phonePad" secureTextEntry="YES"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyF-Ny-DoX" userLabel="密码">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HyF-Ny-DoX" userLabel="密码" customClass="LoginReisterTextField">
                             <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MYm-UA-CRw">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -324,23 +327,23 @@
                             <exclude reference="Cpz-3k-sA1"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="Wht-WK-XWv"/>
-                            <exclude reference="gg6-Ma-BvP"/>
-                            <exclude reference="L0h-6L-gRm"/>
-                            <exclude reference="Nyi-Eo-zhq"/>
-                            <exclude reference="UYZ-KT-1IF"/>
-                            <exclude reference="uYc-eH-ZAh"/>
                             <exclude reference="1B4-zc-6D6"/>
                             <exclude reference="99V-Yb-FvD"/>
                             <exclude reference="WG1-wE-M5u"/>
                             <exclude reference="mv1-ng-bKJ"/>
                             <exclude reference="xYU-7z-TkU"/>
+                            <exclude reference="L0h-6L-gRm"/>
+                            <exclude reference="Nyi-Eo-zhq"/>
+                            <exclude reference="UYZ-KT-1IF"/>
+                            <exclude reference="uYc-eH-ZAh"/>
                             <exclude reference="7Om-d8-c4t"/>
                             <exclude reference="s4O-eS-oSp"/>
                             <exclude reference="xBJ-sV-LYA"/>
                             <exclude reference="3s1-Xn-GD1"/>
                             <exclude reference="Xzk-nO-aAd"/>
                             <exclude reference="oEh-gg-QnU"/>
+                            <exclude reference="Wht-WK-XWv"/>
+                            <exclude reference="gg6-Ma-BvP"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -352,23 +355,23 @@
                             <include reference="Cpz-3k-sA1"/>
                         </mask>
                         <mask key="constraints">
-                            <include reference="Wht-WK-XWv"/>
-                            <include reference="gg6-Ma-BvP"/>
-                            <include reference="L0h-6L-gRm"/>
-                            <include reference="Nyi-Eo-zhq"/>
-                            <include reference="UYZ-KT-1IF"/>
-                            <include reference="uYc-eH-ZAh"/>
                             <include reference="1B4-zc-6D6"/>
                             <include reference="99V-Yb-FvD"/>
                             <include reference="WG1-wE-M5u"/>
                             <include reference="mv1-ng-bKJ"/>
                             <include reference="xYU-7z-TkU"/>
+                            <include reference="L0h-6L-gRm"/>
+                            <include reference="Nyi-Eo-zhq"/>
+                            <include reference="UYZ-KT-1IF"/>
+                            <include reference="uYc-eH-ZAh"/>
                             <include reference="7Om-d8-c4t"/>
                             <include reference="s4O-eS-oSp"/>
                             <include reference="xBJ-sV-LYA"/>
                             <include reference="3s1-Xn-GD1"/>
                             <include reference="Xzk-nO-aAd"/>
                             <include reference="oEh-gg-QnU"/>
+                            <include reference="Wht-WK-XWv"/>
+                            <include reference="gg6-Ma-BvP"/>
                         </mask>
                     </variation>
                 </view>
@@ -394,17 +397,19 @@
                                 </mask>
                             </variation>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-bT-wgh" userLabel="手机号">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hhm-bT-wgh" userLabel="手机号" customClass="LoginReisterTextField">
                             <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <textInputTraits key="textInputTraits" keyboardType="phonePad" secureTextEntry="YES"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-VE-6He" userLabel="密码">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请设置密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-VE-6He" userLabel="密码" customClass="LoginReisterTextField">
                             <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gew-vv-ZDj" userLabel="注册">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -457,21 +462,21 @@
                             <exclude reference="gew-vv-ZDj"/>
                         </mask>
                         <mask key="constraints">
-                            <exclude reference="0hX-Se-uAQ"/>
-                            <exclude reference="wlE-sR-I2e"/>
-                            <exclude reference="8MD-nU-11m"/>
-                            <exclude reference="Ctp-AB-gJP"/>
-                            <exclude reference="YIu-o7-vQK"/>
-                            <exclude reference="bbX-vl-dhh"/>
                             <exclude reference="4V0-2z-1fa"/>
                             <exclude reference="MFZ-4G-2do"/>
                             <exclude reference="bLM-OD-gyF"/>
                             <exclude reference="w3t-Dc-lv6"/>
                             <exclude reference="zf0-sl-hO3"/>
+                            <exclude reference="8MD-nU-11m"/>
+                            <exclude reference="Ctp-AB-gJP"/>
+                            <exclude reference="YIu-o7-vQK"/>
+                            <exclude reference="bbX-vl-dhh"/>
                             <exclude reference="Nee-PN-oOg"/>
                             <exclude reference="XZC-bo-sJS"/>
                             <exclude reference="cVR-LB-jGb"/>
                             <exclude reference="huZ-Fe-MFr"/>
+                            <exclude reference="0hX-Se-uAQ"/>
+                            <exclude reference="wlE-sR-I2e"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -482,21 +487,21 @@
                             <include reference="gew-vv-ZDj"/>
                         </mask>
                         <mask key="constraints">
-                            <include reference="0hX-Se-uAQ"/>
-                            <include reference="wlE-sR-I2e"/>
-                            <include reference="8MD-nU-11m"/>
-                            <include reference="Ctp-AB-gJP"/>
-                            <include reference="YIu-o7-vQK"/>
-                            <include reference="bbX-vl-dhh"/>
                             <include reference="4V0-2z-1fa"/>
                             <include reference="MFZ-4G-2do"/>
                             <include reference="bLM-OD-gyF"/>
                             <include reference="w3t-Dc-lv6"/>
                             <include reference="zf0-sl-hO3"/>
+                            <include reference="8MD-nU-11m"/>
+                            <include reference="Ctp-AB-gJP"/>
+                            <include reference="YIu-o7-vQK"/>
+                            <include reference="bbX-vl-dhh"/>
                             <include reference="Nee-PN-oOg"/>
                             <include reference="XZC-bo-sJS"/>
                             <include reference="cVR-LB-jGb"/>
                             <include reference="huZ-Fe-MFr"/>
+                            <include reference="0hX-Se-uAQ"/>
+                            <include reference="wlE-sR-I2e"/>
                         </mask>
                     </variation>
                 </view>
@@ -533,18 +538,18 @@
                     <exclude reference="Rci-mi-pcU"/>
                     <exclude reference="eEf-GW-z8J"/>
                     <exclude reference="kFN-3K-N3K"/>
-                    <exclude reference="29z-5b-G36"/>
-                    <exclude reference="Jpp-Nt-J7a"/>
-                    <exclude reference="tIz-qj-nFs"/>
-                    <exclude reference="PW2-uA-cfl"/>
-                    <exclude reference="gRz-WH-c9q"/>
-                    <exclude reference="ozz-GZ-ABX"/>
                     <exclude reference="dZb-kn-Bgx"/>
                     <exclude reference="q59-oI-Oy3"/>
                     <exclude reference="u4u-5c-nls"/>
+                    <exclude reference="29z-5b-G36"/>
+                    <exclude reference="Jpp-Nt-J7a"/>
+                    <exclude reference="tIz-qj-nFs"/>
                     <exclude reference="1IQ-bn-hl0"/>
                     <exclude reference="BRk-xL-gm0"/>
                     <exclude reference="ChS-zY-j9O"/>
+                    <exclude reference="PW2-uA-cfl"/>
+                    <exclude reference="gRz-WH-c9q"/>
+                    <exclude reference="ozz-GZ-ABX"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -560,18 +565,18 @@
                     <include reference="Rci-mi-pcU"/>
                     <include reference="eEf-GW-z8J"/>
                     <include reference="kFN-3K-N3K"/>
-                    <include reference="29z-5b-G36"/>
-                    <include reference="Jpp-Nt-J7a"/>
-                    <include reference="tIz-qj-nFs"/>
-                    <include reference="PW2-uA-cfl"/>
-                    <include reference="gRz-WH-c9q"/>
-                    <include reference="ozz-GZ-ABX"/>
                     <include reference="dZb-kn-Bgx"/>
                     <include reference="q59-oI-Oy3"/>
                     <include reference="u4u-5c-nls"/>
+                    <include reference="29z-5b-G36"/>
+                    <include reference="Jpp-Nt-J7a"/>
+                    <include reference="tIz-qj-nFs"/>
                     <include reference="1IQ-bn-hl0"/>
                     <include reference="BRk-xL-gm0"/>
                     <include reference="ChS-zY-j9O"/>
+                    <include reference="PW2-uA-cfl"/>
+                    <include reference="gRz-WH-c9q"/>
+                    <include reference="ozz-GZ-ABX"/>
                 </mask>
             </variation>
         </view>

@@ -11,6 +11,7 @@
 #ifdef __OBJC__
 #import "UIView+CustomSize.h"
 #import "UIBarButtonItem+BarButtonItemExtension.h"
+#import "UITextField+UITextFieldPlace.h"
 //调试阶段
 #ifdef DEBUG
 //输出日志

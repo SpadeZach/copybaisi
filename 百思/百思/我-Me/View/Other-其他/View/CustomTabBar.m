@@ -11,7 +11,7 @@
 #import "CustomTabBar.h"
 
 @interface CustomTabBar ()
-
+//发布按钮
 @property(nonatomic, weak ) UIButton *publishButton;
 
 @end
