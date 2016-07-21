@@ -26,6 +26,9 @@
 		F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */; };
 		F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E381D38B93600AA00A7 /* SettingViewController.m */; };
 		F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */; };
+		F2DB534F1D40846F00C37260 /* MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB534E1D40846F00C37260 /* MeCell.m */; };
+		F2DB53521D40853800C37260 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53511D40853800C37260 /* TableViewConst.m */; };
+		F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53541D408FE100C37260 /* MeFooterView.m */; };
 		F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF97D1D3B1BBE00154E8A /* LoginRegisterViewController.m */; };
 		F2ECF9801D3B1BBE00154E8A /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2ECF97E1D3B1BBE00154E8A /* LoginRegisterViewController.xib */; };
 		F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF9831D3B3B3400154E8A /* CustomTabBar.m */; };
@@ -90,6 +93,12 @@
 		F2883E381D38B93600AA00A7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		F2883E3A1D38BE1900AA00A7 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
+		F2DB534D1D40846F00C37260 /* MeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeCell.h; sourceTree = "<group>"; };
+		F2DB534E1D40846F00C37260 /* MeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeCell.m; sourceTree = "<group>"; };
+		F2DB53501D40853800C37260 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
+		F2DB53511D40853800C37260 /* TableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewConst.m; sourceTree = "<group>"; };
+		F2DB53531D408FE100C37260 /* MeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeFooterView.h; sourceTree = "<group>"; };
+		F2DB53541D408FE100C37260 /* MeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeFooterView.m; sourceTree = "<group>"; };
 		F2ECF97C1D3B1BBE00154E8A /* LoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewController.h; sourceTree = "<group>"; };
 		F2ECF97D1D3B1BBE00154E8A /* LoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewController.m; sourceTree = "<group>"; };
 		F2ECF97E1D3B1BBE00154E8A /* LoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterViewController.xib; sourceTree = "<group>"; };
@@ -224,6 +233,10 @@
 		F2515C8E1D379E450036E473 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F2DB534D1D40846F00C37260 /* MeCell.h */,
+				F2DB534E1D40846F00C37260 /* MeCell.m */,
+				F2DB53531D408FE100C37260 /* MeFooterView.h */,
+				F2DB53541D408FE100C37260 /* MeFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +298,8 @@
 				F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */,
 				F25839941D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.h */,
 				F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */,
+				F2DB53501D40853800C37260 /* TableViewConst.h */,
+				F2DB53511D40853800C37260 /* TableViewConst.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -530,8 +545,10 @@
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
+				F2DB53521D40853800C37260 /* TableViewConst.m in Sources */,
 				F25839961D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m in Sources */,
 				F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */,
+				F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */,
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
 				F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */,
@@ -542,6 +559,7 @@
 				F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */,
 				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,
+				F2DB534F1D40846F00C37260 /* MeCell.m in Sources */,
 				F2ECF9871D3B3B6700154E8A /* QuickLoginButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

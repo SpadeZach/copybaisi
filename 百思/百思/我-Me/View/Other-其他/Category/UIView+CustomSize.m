@@ -34,6 +34,9 @@
 - (CGFloat)custom_botton{
     return self.frame.size.height + self.frame.origin.y;
 }
+- (CGFloat)custom_right{
+    return self.frame.size.width + self.frame.origin.x;
+}
 
 - (void)setCustom_width:(CGFloat)custom_width{
     CGRect frame = self.frame;
@@ -75,7 +78,10 @@
     CGFloat frame = self.frame.origin.y + self.frame.size.height;
     frame = custom_botton;
     custom_botton = frame;
-    
-    
+}
+- (void)setCustom_right:(CGFloat)custom_right{
+    CGFloat frame = self.frame.origin.x + self.frame.size.width;
+    frame = custom_right;
+    custom_right = frame;
 }
 @end

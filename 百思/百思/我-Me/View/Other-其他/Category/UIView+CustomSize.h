@@ -18,4 +18,5 @@
 @property(nonatomic, assign)CGFloat custom_CenterY;
 @property(nonatomic, assign)CGSize custom_size;
 @property(nonatomic, assign)CGFloat custom_botton;
+@property(nonatomic, assign)CGFloat custom_right;
 @end
