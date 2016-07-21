@@ -19,7 +19,6 @@
     // Override point for customization after application launch.
     //创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
     //根控制器
     self.window.rootViewController = [[ZBTabBarViewController alloc] init];
     
