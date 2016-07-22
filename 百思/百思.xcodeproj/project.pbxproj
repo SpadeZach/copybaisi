@@ -28,6 +28,10 @@
 		F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */; };
 		F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E381D38B93600AA00A7 /* SettingViewController.m */; };
 		F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */; };
+		F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */; };
+		F2CCE29C1D41C31E00AB7A18 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE29A1D41C31E00AB7A18 /* MeWebViewController.m */; };
+		F2CCE29D1D41C31E00AB7A18 /* MeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CCE29B1D41C31E00AB7A18 /* MeWebViewController.xib */; };
+		F2CFE7821D40B392003AEAB2 /* MeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CFE7811D40B392003AEAB2 /* MeSquare.m */; };
 		F2DB534F1D40846F00C37260 /* MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB534E1D40846F00C37260 /* MeCell.m */; };
 		F2DB53521D40853800C37260 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53511D40853800C37260 /* TableViewConst.m */; };
 		F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53541D408FE100C37260 /* MeFooterView.m */; };
@@ -105,6 +109,13 @@
 		F2883E381D38B93600AA00A7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		F2883E3A1D38BE1900AA00A7 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
+		F2CCE2961D419CC000AB7A18 /* MeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareButton.h; sourceTree = "<group>"; };
+		F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareButton.m; sourceTree = "<group>"; };
+		F2CCE2991D41C31E00AB7A18 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
+		F2CCE29A1D41C31E00AB7A18 /* MeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeWebViewController.m; sourceTree = "<group>"; };
+		F2CCE29B1D41C31E00AB7A18 /* MeWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeWebViewController.xib; sourceTree = "<group>"; };
+		F2CFE7801D40B392003AEAB2 /* MeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquare.h; sourceTree = "<group>"; };
+		F2CFE7811D40B392003AEAB2 /* MeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquare.m; sourceTree = "<group>"; };
 		F2DB534D1D40846F00C37260 /* MeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeCell.h; sourceTree = "<group>"; };
 		F2DB534E1D40846F00C37260 /* MeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeCell.m; sourceTree = "<group>"; };
 		F2DB53501D40853800C37260 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
@@ -176,7 +187,6 @@
 			children = (
 				F2515C841D379E450036E473 /* Controller */,
 				F2515C851D379E450036E473 /* Model */,
-				F2515C861D379E450036E473 /* View */,
 			);
 			path = "关注-Attention";
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 		F2515C851D379E450036E473 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2515C861D379E450036E473 /* View */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,7 +215,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			name = View;
+			path = ../View;
 			sourceTree = "<group>";
 		};
 		F2515C871D379E450036E473 /* 精华-Essence */ = {
@@ -244,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				F2515C8C1D379E450036E473 /* Controller */,
-				F2515C8D1D379E450036E473 /* Model */,
+				F2CFE77F1D40B37C003AEAB2 /* Model */,
 				F2515C8E1D379E450036E473 /* View */,
 			);
 			path = "我-Me";
@@ -257,15 +269,11 @@
 				F2515C9D1D379EA30036E473 /* MeViewController.m */,
 				F2883E371D38B93600AA00A7 /* SettingViewController.h */,
 				F2883E381D38B93600AA00A7 /* SettingViewController.m */,
+				F2CCE2991D41C31E00AB7A18 /* MeWebViewController.h */,
+				F2CCE29A1D41C31E00AB7A18 /* MeWebViewController.m */,
+				F2CCE29B1D41C31E00AB7A18 /* MeWebViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F2515C8D1D379E450036E473 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		F2515C8E1D379E450036E473 /* View */ = {
@@ -275,6 +283,8 @@
 				F2DB534E1D40846F00C37260 /* MeCell.m */,
 				F2DB53531D408FE100C37260 /* MeFooterView.h */,
 				F2DB53541D408FE100C37260 /* MeFooterView.m */,
+				F2CCE2961D419CC000AB7A18 /* MeSquareButton.h */,
+				F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,6 +446,15 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		F2CFE77F1D40B37C003AEAB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2CFE7801D40B392003AEAB2 /* MeSquare.h */,
+				F2CFE7811D40B392003AEAB2 /* MeSquare.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F2ECF9811D3B3B3400154E8A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +583,7 @@
 				F2ECF9801D3B1BBE00154E8A /* LoginRegisterViewController.xib in Resources */,
 				F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */,
 				F25BB36F1D3C884A00E554A3 /* AttentionViewController.xib in Resources */,
+				F2CCE29D1D41C31E00AB7A18 /* MeWebViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -716,7 +736,9 @@
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
+				F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */,
 				F2DB53521D40853800C37260 /* TableViewConst.m in Sources */,
+				F2CCE29C1D41C31E00AB7A18 /* MeWebViewController.m in Sources */,
 				F25839961D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m in Sources */,
 				F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */,
 				F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */,
@@ -727,6 +749,7 @@
 				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
 				F2883E301D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m in Sources */,
 				F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */,
+				F2CFE7821D40B392003AEAB2 /* MeSquare.m in Sources */,
 				F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */,
 				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,

@@ -43,8 +43,7 @@
     self.tableView.sectionFooterHeight = CustomMargin;
     self.tableView.contentInset = UIEdgeInsetsMake(CustomMargin- 25, 0, 0, 0);
     //设置tableView
-    MeFooterView *footerView = [[MeFooterView alloc] init];
-    self.tableView.tableFooterView = footerView;
+    self.tableView.tableFooterView = [[MeFooterView alloc] init];;
 }
 - (void)settingClick{
     SettingViewController *tempVC = [[SettingViewController alloc] init];
