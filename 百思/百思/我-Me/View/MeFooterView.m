@@ -88,7 +88,16 @@
     MeSquare *square = sender.square;
     
     if ([square.url hasPrefix:@"http"]) {
-        CustomLog(@"利用webView加载url");
+        MeWebViewController *webView = [[MeWebViewController alloc] init];
+        webView.url = square.url;
+        webView.navigationItem.title = square.name;
+        //跳转
+        //获得我这个模块的导航控制器
+        UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+        UINavigationController *nav = tabBarVC.selectedViewController;
+        [nav pushViewController:webView animated:YES];
+        //也可以用safari模态跳转
+        
     }else if ([square.url hasPrefix:@"mod"]){
         if([square.url hasSuffix:@"BDJ_To_Check"]){
            CustomLog(@"跳转到审帖");

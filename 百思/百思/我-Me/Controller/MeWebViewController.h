@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MeWebViewController : UIViewController
-
+//请求路径
+@property(nonatomic, copy)NSString *url;
 @end
