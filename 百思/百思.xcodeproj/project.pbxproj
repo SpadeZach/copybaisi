@@ -28,6 +28,8 @@
 		F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E351D38B2E400AA00A7 /* RecommendAttentionViewController.m */; };
 		F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E381D38B93600AA00A7 /* SettingViewController.m */; };
 		F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */; };
+		F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */; };
+		F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */; };
 		F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */; };
 		F2CCE29C1D41C31E00AB7A18 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE29A1D41C31E00AB7A18 /* MeWebViewController.m */; };
 		F2CCE29D1D41C31E00AB7A18 /* MeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CCE29B1D41C31E00AB7A18 /* MeWebViewController.xib */; };
@@ -109,6 +111,10 @@
 		F2883E381D38B93600AA00A7 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		F2883E3A1D38BE1900AA00A7 /* CustomNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationViewController.h; sourceTree = "<group>"; };
 		F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
+		F2A8EACB1D44ED6B006373BE /* NSString+NStringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NStringExtension.h"; sourceTree = "<group>"; };
+		F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NStringExtension.m"; sourceTree = "<group>"; };
+		F2A8EACE1D44FA9C006373BE /* ClearCacheTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTableViewCell.h; sourceTree = "<group>"; };
+		F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheTableViewCell.m; sourceTree = "<group>"; };
 		F2CCE2961D419CC000AB7A18 /* MeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareButton.h; sourceTree = "<group>"; };
 		F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareButton.m; sourceTree = "<group>"; };
 		F2CCE2991D41C31E00AB7A18 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
@@ -283,6 +289,8 @@
 				F2DB534E1D40846F00C37260 /* MeCell.m */,
 				F2DB53531D408FE100C37260 /* MeFooterView.h */,
 				F2DB53541D408FE100C37260 /* MeFooterView.m */,
+				F2A8EACE1D44FA9C006373BE /* ClearCacheTableViewCell.h */,
+				F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */,
 				F2CCE2961D419CC000AB7A18 /* MeSquareButton.h */,
 				F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */,
 			);
@@ -344,6 +352,8 @@
 				F2515CA51D379FDA0036E473 /* UIView+CustomSize.m */,
 				F2883E2E1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.h */,
 				F2883E2F1D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m */,
+				F2A8EACB1D44ED6B006373BE /* NSString+NStringExtension.h */,
+				F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */,
 				F25839941D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.h */,
 				F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */,
 				F2DB53501D40853800C37260 /* TableViewConst.h */,
@@ -731,6 +741,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */,
 				F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */,
 				F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */,
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
@@ -743,6 +754,7 @@
 				F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */,
 				F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */,
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
+				F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
 				F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */,
 				F25BB3721D3CA4AB00E554A3 /* LoginReisterTextField.m in Sources */,

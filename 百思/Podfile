@@ -6,6 +6,7 @@ target '百思' do
   # use_frameworks!
 pod "AFNetworking"
 pod "SDWebImage"
+pod "SVProgressHUD”
 
   # Pods for 百思
 
