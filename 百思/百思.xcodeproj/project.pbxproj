@@ -29,6 +29,12 @@
 		F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E381D38B93600AA00A7 /* SettingViewController.m */; };
 		F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */; };
 		F2A517E51D45ABA40020D72B /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517E41D45ABA40020D72B /* SettingCell.m */; };
+		F2A517E81D45C95F0020D72B /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517E71D45C95F0020D72B /* TitleButton.m */; };
+		F2A517EB1D45D2850020D72B /* VideoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517EA1D45D2850020D72B /* VideoTableViewController.m */; };
+		F2A517EE1D45D2920020D72B /* VoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517ED1D45D2920020D72B /* VoiceTableViewController.m */; };
+		F2A517F11D45D2A50020D72B /* AllTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517F01D45D2A50020D72B /* AllTableViewController.m */; };
+		F2A517F41D45D2B30020D72B /* PictureTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517F31D45D2B30020D72B /* PictureTableViewController.m */; };
+		F2A517F71D45D2C70020D72B /* WordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517F61D45D2C70020D72B /* WordTableViewController.m */; };
 		F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */; };
 		F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */; };
 		F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */; };
@@ -114,6 +120,18 @@
 		F2883E3B1D38BE1900AA00A7 /* CustomNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationViewController.m; sourceTree = "<group>"; };
 		F2A517E31D45ABA40020D72B /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
 		F2A517E41D45ABA40020D72B /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		F2A517E61D45C95F0020D72B /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleButton.h; path = "百思/我-Me/View/TitleButton.h"; sourceTree = SOURCE_ROOT; };
+		F2A517E71D45C95F0020D72B /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleButton.m; path = "百思/我-Me/View/TitleButton.m"; sourceTree = SOURCE_ROOT; };
+		F2A517E91D45D2850020D72B /* VideoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoTableViewController.h; sourceTree = "<group>"; };
+		F2A517EA1D45D2850020D72B /* VideoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoTableViewController.m; sourceTree = "<group>"; };
+		F2A517EC1D45D2920020D72B /* VoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTableViewController.h; sourceTree = "<group>"; };
+		F2A517ED1D45D2920020D72B /* VoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTableViewController.m; sourceTree = "<group>"; };
+		F2A517EF1D45D2A50020D72B /* AllTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllTableViewController.h; sourceTree = "<group>"; };
+		F2A517F01D45D2A50020D72B /* AllTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTableViewController.m; sourceTree = "<group>"; };
+		F2A517F21D45D2B30020D72B /* PictureTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureTableViewController.h; sourceTree = "<group>"; };
+		F2A517F31D45D2B30020D72B /* PictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTableViewController.m; sourceTree = "<group>"; };
+		F2A517F51D45D2C70020D72B /* WordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewController.h; sourceTree = "<group>"; };
+		F2A517F61D45D2C70020D72B /* WordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewController.m; sourceTree = "<group>"; };
 		F2A8EACB1D44ED6B006373BE /* NSString+NStringExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NStringExtension.h"; sourceTree = "<group>"; };
 		F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NStringExtension.m"; sourceTree = "<group>"; };
 		F2A8EACE1D44FA9C006373BE /* ClearCacheTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTableViewCell.h; sourceTree = "<group>"; };
@@ -243,6 +261,16 @@
 			children = (
 				F2515C931D379E790036E473 /* EssenceViewController.h */,
 				F2515C941D379E790036E473 /* EssenceViewController.m */,
+				F2A517EF1D45D2A50020D72B /* AllTableViewController.h */,
+				F2A517F01D45D2A50020D72B /* AllTableViewController.m */,
+				F2A517E91D45D2850020D72B /* VideoTableViewController.h */,
+				F2A517EA1D45D2850020D72B /* VideoTableViewController.m */,
+				F2A517EC1D45D2920020D72B /* VoiceTableViewController.h */,
+				F2A517ED1D45D2920020D72B /* VoiceTableViewController.m */,
+				F2A517F21D45D2B30020D72B /* PictureTableViewController.h */,
+				F2A517F31D45D2B30020D72B /* PictureTableViewController.m */,
+				F2A517F51D45D2C70020D72B /* WordTableViewController.h */,
+				F2A517F61D45D2C70020D72B /* WordTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,6 +285,8 @@
 		F2515C8A1D379E450036E473 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F2A517E61D45C95F0020D72B /* TitleButton.h */,
+				F2A517E71D45C95F0020D72B /* TitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -748,17 +778,20 @@
 			files = (
 				F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */,
 				F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */,
+				F2A517F11D45D2A50020D72B /* AllTableViewController.m in Sources */,
 				F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */,
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
 				F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */,
+				F2A517EB1D45D2850020D72B /* VideoTableViewController.m in Sources */,
 				F2DB53521D40853800C37260 /* TableViewConst.m in Sources */,
 				F2CCE29C1D41C31E00AB7A18 /* MeWebViewController.m in Sources */,
 				F25839961D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m in Sources */,
 				F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */,
 				F2A517E51D45ABA40020D72B /* SettingCell.m in Sources */,
 				F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */,
+				F2A517EE1D45D2920020D72B /* VoiceTableViewController.m in Sources */,
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
 				F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
@@ -767,7 +800,10 @@
 				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
 				F2883E301D38AEDD00AA00A7 /* UIBarButtonItem+BarButtonItemExtension.m in Sources */,
 				F2883E361D38B2E400AA00A7 /* RecommendAttentionViewController.m in Sources */,
+				F2A517F71D45D2C70020D72B /* WordTableViewController.m in Sources */,
 				F2CFE7821D40B392003AEAB2 /* MeSquare.m in Sources */,
+				F2A517E81D45C95F0020D72B /* TitleButton.m in Sources */,
+				F2A517F41D45D2B30020D72B /* PictureTableViewController.m in Sources */,
 				F2515CAC1D379FDA0036E473 /* UIView+CustomSize.m in Sources */,
 				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,
