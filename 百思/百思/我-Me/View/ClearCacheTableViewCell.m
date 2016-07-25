@@ -20,11 +20,21 @@
         //如果缓存过大
         self.accessoryView = loadView;
         self.textLabel.text = @"清除缓存(正在计算缓存大小...)";
+        //关闭点击->计算过程中不让他点
+        self.userInteractionEnabled = NO;
+        
+        //typeof（）里是查看的类型
+        //让self变成弱引用 点返回的时候让cell立刻 dealloc
+        __weak typeof(self) weakSelf = self;
+        
         //子线程缓存大小
         dispatch_async(dispatch_get_global_queue(0, 0), ^{
             //框架下 获取图片大小
             CGFloat size = [SDImageCache sharedImageCache].getSize;
             NSString *midSizeText = nil;
+            //如果这个引用销毁了 直接返回
+            if (weakSelf == nil) return;
+            
             if (size >= pow(10, 9)) {
                 //10的9次方
                 //size >= 1GB
@@ -36,19 +46,21 @@
                 //1MB> size >= 1KB
                 midSizeText = [NSString stringWithFormat:@"%.2fKB",size / 1000];
             }else{
-                midSizeText = [NSString stringWithFormat:@"%zdB",size];
+                midSizeText = [NSString stringWithFormat:@"%.2fB",size];
             }
             NSString *text = [NSString stringWithFormat:@"清除缓存(%@)",midSizeText];
             //回到主线程设置文字
             dispatch_async(dispatch_get_main_queue(), ^{
                 
-                self.textLabel.text = text;
+                weakSelf.textLabel.text = text;
                 //清空cell右边指示View
-                self.accessoryView = nil;
-                self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                weakSelf.accessoryView = nil;
+                weakSelf.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+                [weakSelf addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clearCache)]];
+                //恢复点击
+                weakSelf.userInteractionEnabled = YES;
             });
-           [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clearCache)]];
-            
+
         });
         
     } 
@@ -75,5 +87,10 @@
         });
     }];
 }
-
+//每次cell出现 都会重新布局子控件
+- (void)layoutSubviews{
+    //如果cell被重用的话右边的圈圈如果未计算完->出现,计算完就不会出现，因为在cell方法中loadView =nil;
+    UIActivityIndicatorView *loadView = (UIActivityIndicatorView *)self.accessoryView;
+    [loadView startAnimating];
+}
 @end
