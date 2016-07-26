@@ -12,6 +12,7 @@
 #import "Topic.h"
 #import <UIImageView+WebCache.h>
 #import <MJRefresh.h>
+#import "CustomRefreshHeader.h"
 @interface AllTableViewController ()
 
 @property(nonatomic, strong) NSMutableArray *tempArray;
@@ -25,13 +26,13 @@
     [super viewDidLoad];
     self.tableView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-     [self setupRefresh];
+    [self setupRefresh];
 }
 - (void)setupRefresh
 {
-    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopic)];
-    //根据拖拽看透明度
-    self.tableView.mj_header.automaticallyChangeAlpha = YES;
+    self.tableView.mj_header = [CustomRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopic)];
+    [self.tableView.mj_header beginRefreshing];
+  
 }
 - (void)loadNewTopic{
     
