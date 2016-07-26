@@ -1,20 +1,18 @@
 //
-//  MeSquare.m
+//  Topic.m
 //  百思
 //
-//  Created by 赵博 on 16/7/21.
+//  Created by 赵博 on 16/7/26.
 //  Copyright © 2016年 赵博. All rights reserved.
 //
 
-#import "MeSquare.h"
+#import "Topic.h"
 
-@implementation MeSquare
-- (void)setValue:(id)value forUndefinedKey:(NSString *)key
-{
+@implementation Topic
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key{
     if ([key isEqualToString:@"id"]) {
         self.ID = value;
     }
-    
 }
 - (id)initWithDictionary:(NSDictionary *)dictionary
 {

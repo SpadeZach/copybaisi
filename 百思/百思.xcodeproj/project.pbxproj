@@ -37,6 +37,7 @@
 		F2A517F71D45D2C70020D72B /* WordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A517F61D45D2C70020D72B /* WordTableViewController.m */; };
 		F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */; };
 		F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */; };
+		F2AE40661D46E81600EBD97A /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = F2AE40651D46E81600EBD97A /* Topic.m */; };
 		F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */; };
 		F2CCE29C1D41C31E00AB7A18 /* MeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CCE29A1D41C31E00AB7A18 /* MeWebViewController.m */; };
 		F2CCE29D1D41C31E00AB7A18 /* MeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2CCE29B1D41C31E00AB7A18 /* MeWebViewController.xib */; };
@@ -136,6 +137,8 @@
 		F2A8EACC1D44ED6B006373BE /* NSString+NStringExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NStringExtension.m"; sourceTree = "<group>"; };
 		F2A8EACE1D44FA9C006373BE /* ClearCacheTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTableViewCell.h; sourceTree = "<group>"; };
 		F2A8EACF1D44FA9C006373BE /* ClearCacheTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheTableViewCell.m; sourceTree = "<group>"; };
+		F2AE40641D46E81600EBD97A /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Topic.h; path = "百思/精华-Essence/Controller/Topic.h"; sourceTree = SOURCE_ROOT; };
+		F2AE40651D46E81600EBD97A /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Topic.m; path = "百思/精华-Essence/Controller/Topic.m"; sourceTree = SOURCE_ROOT; };
 		F2CCE2961D419CC000AB7A18 /* MeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeSquareButton.h; sourceTree = "<group>"; };
 		F2CCE2971D419CC000AB7A18 /* MeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeSquareButton.m; sourceTree = "<group>"; };
 		F2CCE2991D41C31E00AB7A18 /* MeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeWebViewController.h; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 		F2515C891D379E450036E473 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2AE40641D46E81600EBD97A /* Topic.h */,
+				F2AE40651D46E81600EBD97A /* Topic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -781,6 +786,7 @@
 				F2A517F11D45D2A50020D72B /* AllTableViewController.m in Sources */,
 				F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */,
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
+				F2AE40661D46E81600EBD97A /* Topic.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
 				F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */,
