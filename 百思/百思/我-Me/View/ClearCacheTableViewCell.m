@@ -10,7 +10,9 @@
 #import <SVProgressHUD.h>
 #import <SDImageCache.h>
 @implementation ClearCacheTableViewCell
+
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         //活动指示器
@@ -33,9 +35,9 @@
             CGFloat size = [SDImageCache sharedImageCache].getSize;
             NSString *midSizeText = nil;
             //如果这个引用销毁了 直接返回
-            if (weakSelf == nil) return;
+//            if (weakSelf == nil) return;
             
-            if (size >= pow(10, 9)) {
+            if (size >= 1000 * 1000 * 1000) {
                 //10的9次方
                 //size >= 1GB
                 midSizeText = [NSString stringWithFormat:@"%.2fGB",size / pow(10, 9)];
@@ -88,9 +90,9 @@
     }];
 }
 //每次cell出现 都会重新布局子控件
-- (void)layoutSubviews{
-    //如果cell被重用的话右边的圈圈如果未计算完->出现,计算完就不会出现，因为在cell方法中loadView =nil;
-    UIActivityIndicatorView *loadView = (UIActivityIndicatorView *)self.accessoryView;
-    [loadView startAnimating];
-}
+//- (void)layoutSubviews{
+//    //如果cell被重用的话右边的圈圈如果未计算完->出现,计算完就不会出现，因为在cell方法中loadView =nil;
+//    UIActivityIndicatorView *loadView = (UIActivityIndicatorView *)self.accessoryView;
+//    [loadView startAnimating];
+//}
 @end

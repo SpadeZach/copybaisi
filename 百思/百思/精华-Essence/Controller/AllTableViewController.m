@@ -11,23 +11,29 @@
 #import <AFNetworking.h>
 #import "Topic.h"
 #import <UIImageView+WebCache.h>
+#import <MJRefresh.h>
 @interface AllTableViewController ()
 
 @property(nonatomic, strong) NSMutableArray *tempArray;
-
+@property(nonatomic, weak) UILabel *label;
 @end
 
 @implementation AllTableViewController
 
 - (void)viewDidLoad {
-    [self loadNewTopics];
+
     [super viewDidLoad];
     self.tableView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
-    
+     [self setupRefresh];
 }
-
-- (void)loadNewTopics{
+- (void)setupRefresh
+{
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopic)];
+    //根据拖拽看透明度
+    self.tableView.mj_header.automaticallyChangeAlpha = YES;
+}
+- (void)loadNewTopic{
     
     //参数
     NSMutableDictionary *parmas = [NSMutableDictionary dictionary];
@@ -44,17 +50,17 @@
         }
         //刷新数据-不然不会再调用数据源方法
         [self.tableView reloadData];
-
-        
+        [self.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         
         CustomLog(@"请求成功- %@",error);
+
+
     }];
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"----%ld",self.tempArray.count);
     return self.tempArray.count;
     
 }
@@ -73,7 +79,5 @@
     
     return cell;
 }
-
-
 
 @end

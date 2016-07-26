@@ -46,8 +46,8 @@ static NSString *const SettingCellId = @"settingIdentify";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if (indexPath.row == 0) {
-        //取出cell
-        return [tableView dequeueReusableCellWithIdentifier:ClearCacheCellId];
+        ClearCacheTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ClearCacheCellId];        //取出cell
+        return cell;
     }else{
         SettingCell *cell = [tableView dequeueReusableCellWithIdentifier:SettingCellId];
         
