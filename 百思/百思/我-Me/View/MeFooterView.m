@@ -9,7 +9,7 @@
 //
 
 #import "MeFooterView.h"
-#import <AFNetworking.h>
+#import "CustomHTTPSessionManager.h"
 #import "MeSquare.h"
 
 #import "MeSquareButton.h"
@@ -29,7 +29,7 @@
         parmas[@"a"] = @"square";
         parmas[@"c"] = @"topic";
         //发送请求
-        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parmas success:^(NSURLSessionDataTask *task, id responseObject) {
+        [[CustomHTTPSessionManager manager] GET:CommonUrl parameters:parmas success:^(NSURLSessionDataTask *task, id responseObject) {
             self.tempArray = [NSMutableArray array];
             NSDictionary *dictionary = responseObject;
             for (NSMutableDictionary *dic in dictionary[@"square_list"]) {

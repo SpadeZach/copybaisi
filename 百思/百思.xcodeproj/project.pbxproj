@@ -50,6 +50,10 @@
 		F2ECF9801D3B1BBE00154E8A /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2ECF97E1D3B1BBE00154E8A /* LoginRegisterViewController.xib */; };
 		F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF9831D3B3B3400154E8A /* CustomTabBar.m */; };
 		F2ECF9871D3B3B6700154E8A /* QuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF9861D3B3B6700154E8A /* QuickLoginButton.m */; };
+		F2F6D7DC1D487BD100C1AEF3 /* CustomNormalAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = F2F6D7DB1D487BD100C1AEF3 /* CustomNormalAutoFooter.m */; };
+		F2FAED221D499BC700171DB4 /* CustomHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAED211D499BC700171DB4 /* CustomHTTPSessionManager.m */; };
+		F2FAED251D49D7E900171DB4 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FAED241D49D7E900171DB4 /* TopicCell.m */; };
+		F2FAED351D49DC9700171DB4 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FAED341D49DC9700171DB4 /* TopicCell.xib */; };
 		FD1B9D0C0811D28F11F92809 /* libPods-百思.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6838F6BFF1BD9539877BC53E /* libPods-百思.a */; };
 /* End PBXBuildFile section */
 
@@ -162,6 +166,13 @@
 		F2ECF9831D3B3B3400154E8A /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		F2ECF9851D3B3B6700154E8A /* QuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickLoginButton.h; sourceTree = "<group>"; };
 		F2ECF9861D3B3B6700154E8A /* QuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickLoginButton.m; sourceTree = "<group>"; };
+		F2F6D7DA1D487BD100C1AEF3 /* CustomNormalAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNormalAutoFooter.h; sourceTree = "<group>"; };
+		F2F6D7DB1D487BD100C1AEF3 /* CustomNormalAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNormalAutoFooter.m; sourceTree = "<group>"; };
+		F2FAED201D499BC700171DB4 /* CustomHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHTTPSessionManager.h; sourceTree = "<group>"; };
+		F2FAED211D499BC700171DB4 /* CustomHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHTTPSessionManager.m; sourceTree = "<group>"; };
+		F2FAED231D49D7E900171DB4 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicCell.h; path = "百思/我-Me/View/Other-其他/View/TopicCell.h"; sourceTree = SOURCE_ROOT; };
+		F2FAED241D49D7E900171DB4 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicCell.m; path = "百思/我-Me/View/Other-其他/View/TopicCell.m"; sourceTree = SOURCE_ROOT; };
+		F2FAED341D49DC9700171DB4 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopicCell.xib; path = "百思/我-Me/View/Other-其他/View/TopicCell.xib"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +306,9 @@
 			children = (
 				F2A517E61D45C95F0020D72B /* TitleButton.h */,
 				F2A517E71D45C95F0020D72B /* TitleButton.m */,
+				F2FAED231D49D7E900171DB4 /* TopicCell.h */,
+				F2FAED241D49D7E900171DB4 /* TopicCell.m */,
+				F2FAED341D49DC9700171DB4 /* TopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +533,10 @@
 				F25BB3711D3CA4AB00E554A3 /* LoginReisterTextField.m */,
 				F2DEAE941D479DCD00C259AF /* CustomRefreshHeader.h */,
 				F2DEAE951D479DCD00C259AF /* CustomRefreshHeader.m */,
+				F2F6D7DA1D487BD100C1AEF3 /* CustomNormalAutoFooter.h */,
+				F2F6D7DB1D487BD100C1AEF3 /* CustomNormalAutoFooter.m */,
+				F2FAED201D499BC700171DB4 /* CustomHTTPSessionManager.h */,
+				F2FAED211D499BC700171DB4 /* CustomHTTPSessionManager.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -637,6 +655,7 @@
 			files = (
 				F2ECF9801D3B1BBE00154E8A /* LoginRegisterViewController.xib in Resources */,
 				F265F8FA1D34B1C7002F3B9E /* Assets.xcassets in Resources */,
+				F2FAED351D49DC9700171DB4 /* TopicCell.xib in Resources */,
 				F25BB36F1D3C884A00E554A3 /* AttentionViewController.xib in Resources */,
 				F2CCE29D1D41C31E00AB7A18 /* MeWebViewController.xib in Resources */,
 			);
@@ -788,11 +807,14 @@
 			files = (
 				F2A8EAD01D44FA9C006373BE /* ClearCacheTableViewCell.m in Sources */,
 				F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */,
+				F2FAED221D499BC700171DB4 /* CustomHTTPSessionManager.m in Sources */,
 				F2A517F11D45D2A50020D72B /* AllTableViewController.m in Sources */,
+				F2F6D7DC1D487BD100C1AEF3 /* CustomNormalAutoFooter.m in Sources */,
 				F2883E3C1D38BE1900AA00A7 /* CustomNavigationViewController.m in Sources */,
 				F2515C9E1D379EA30036E473 /* MeViewController.m in Sources */,
 				F2AE40661D46E81600EBD97A /* Topic.m in Sources */,
 				F2DEAE961D479DCD00C259AF /* CustomRefreshHeader.m in Sources */,
+				F2FAED251D49D7E900171DB4 /* TopicCell.m in Sources */,
 				F2883E391D38B93600AA00A7 /* SettingViewController.m in Sources */,
 				F2515C9B1D379E980036E473 /* AttentionViewController.m in Sources */,
 				F2CCE2981D419CC000AB7A18 /* MeSquareButton.m in Sources */,
