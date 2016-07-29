@@ -44,6 +44,7 @@ static NSString *const TopicCellId = @"topic";
     self.tableView.contentInset = UIEdgeInsetsMake(104, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     self.tableView.rowHeight = 250;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TopicCell class]) bundle:nil] forCellReuseIdentifier:TopicCellId];
 }

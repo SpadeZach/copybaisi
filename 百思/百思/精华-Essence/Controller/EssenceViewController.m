@@ -54,7 +54,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    scrollView.backgroundColor = [UIColor purpleColor];
+    scrollView.backgroundColor = CommonBgColor;
     scrollView.frame = self.view.bounds;
     [self.view addSubview:scrollView];
     scrollView.contentSize = CGSizeMake(self.childViewControllers.count * scrollView.custom_width, 0);
