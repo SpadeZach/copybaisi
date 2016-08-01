@@ -46,6 +46,8 @@
 		F2DB53521D40853800C37260 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53511D40853800C37260 /* TableViewConst.m */; };
 		F2DB53551D408FE100C37260 /* MeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DB53541D408FE100C37260 /* MeFooterView.m */; };
 		F2DEAE961D479DCD00C259AF /* CustomRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DEAE951D479DCD00C259AF /* CustomRefreshHeader.m */; };
+		F2E9B6E61D4F1E010014A66D /* NSDate+NSDateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E9B6E51D4F1E010014A66D /* NSDate+NSDateExtension.m */; };
+		F2E9B6E91D4F203D0014A66D /* NSCalendar+CalendarExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E9B6E81D4F203D0014A66D /* NSCalendar+CalendarExtension.m */; };
 		F2ECF97F1D3B1BBE00154E8A /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF97D1D3B1BBE00154E8A /* LoginRegisterViewController.m */; };
 		F2ECF9801D3B1BBE00154E8A /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2ECF97E1D3B1BBE00154E8A /* LoginRegisterViewController.xib */; };
 		F2ECF9841D3B3B3400154E8A /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2ECF9831D3B3B3400154E8A /* CustomTabBar.m */; };
@@ -159,6 +161,10 @@
 		F2DB53541D408FE100C37260 /* MeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeFooterView.m; sourceTree = "<group>"; };
 		F2DEAE941D479DCD00C259AF /* CustomRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRefreshHeader.h; sourceTree = "<group>"; };
 		F2DEAE951D479DCD00C259AF /* CustomRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRefreshHeader.m; sourceTree = "<group>"; };
+		F2E9B6E41D4F1E010014A66D /* NSDate+NSDateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+NSDateExtension.h"; sourceTree = "<group>"; };
+		F2E9B6E51D4F1E010014A66D /* NSDate+NSDateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+NSDateExtension.m"; sourceTree = "<group>"; };
+		F2E9B6E71D4F203D0014A66D /* NSCalendar+CalendarExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+CalendarExtension.h"; sourceTree = "<group>"; };
+		F2E9B6E81D4F203D0014A66D /* NSCalendar+CalendarExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+CalendarExtension.m"; sourceTree = "<group>"; };
 		F2ECF97C1D3B1BBE00154E8A /* LoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRegisterViewController.h; sourceTree = "<group>"; };
 		F2ECF97D1D3B1BBE00154E8A /* LoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRegisterViewController.m; sourceTree = "<group>"; };
 		F2ECF97E1D3B1BBE00154E8A /* LoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterViewController.xib; sourceTree = "<group>"; };
@@ -415,6 +421,10 @@
 				F25839951D3FC2DB00F3F7A9 /* UITextField+UITextFieldPlace.m */,
 				F2DB53501D40853800C37260 /* TableViewConst.h */,
 				F2DB53511D40853800C37260 /* TableViewConst.m */,
+				F2E9B6E41D4F1E010014A66D /* NSDate+NSDateExtension.h */,
+				F2E9B6E51D4F1E010014A66D /* NSDate+NSDateExtension.m */,
+				F2E9B6E71D4F203D0014A66D /* NSCalendar+CalendarExtension.h */,
+				F2E9B6E81D4F203D0014A66D /* NSCalendar+CalendarExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -829,6 +839,7 @@
 				F2515CAB1D379FDA0036E473 /* AppDelegate.m in Sources */,
 				F2A8EACD1D44ED6B006373BE /* NSString+NStringExtension.m in Sources */,
 				F2515C981D379E870036E473 /* FirstNewViewController.m in Sources */,
+				F2E9B6E61D4F1E010014A66D /* NSDate+NSDateExtension.m in Sources */,
 				F2883E2D1D38AA4800AA00A7 /* ItemManage.m in Sources */,
 				F25BB3721D3CA4AB00E554A3 /* LoginReisterTextField.m in Sources */,
 				F2515CAE1D379FDA0036E473 /* ZBTabBarViewController.m in Sources */,
@@ -842,6 +853,7 @@
 				F2515C951D379E790036E473 /* EssenceViewController.m in Sources */,
 				F265F8EF1D34B1C7002F3B9E /* main.m in Sources */,
 				F2DB534F1D40846F00C37260 /* MeCell.m in Sources */,
+				F2E9B6E91D4F203D0014A66D /* NSCalendar+CalendarExtension.m in Sources */,
 				F2ECF9871D3B3B6700154E8A /* QuickLoginButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -969,7 +981,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思/我-Me/View/Other-其他/Category/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -985,7 +997,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思/我-Me/View/Other-其他/Category/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "--.--";
 				PRODUCT_NAME = "$(TARGET_NAME)";

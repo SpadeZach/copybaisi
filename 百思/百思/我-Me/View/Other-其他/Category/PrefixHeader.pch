@@ -14,6 +14,8 @@
 #import "UITextField+UITextFieldPlace.h"
 #import "TableViewConst.h"
 #import "NSString+NStringExtension.h"
+#import "NSDate+NSDateExtension.h"
+#import "NSCalendar+CalendarExtension.h"
 //调试阶段
 #ifdef DEBUG
 //输出日志
@@ -28,9 +30,10 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 //高
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-
+//背景颜色
 #define CommonBgColor CustomColor( 206, 206, 206, 1)
-
+//版本判断
+#define IOS(version) ([UIDevice currentDevice].systemVersion.doubleValue >= (version))
 
 
 

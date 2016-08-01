@@ -30,6 +30,8 @@
     self.nameLabel.text = topic.name;
     self.createdAtLabel.text = topic.created_at;
     self.text_label.text = topic.text;
+    
+    
     [self buttonWithTitle:self.dingButton number:topic.ding placeholder:@"顶"];
     [self buttonWithTitle:self.caiButton number:topic.cai placeholder:@"踩"];
     [self buttonWithTitle:self.repostButton number:topic.repost placeholder:@"分享"];
