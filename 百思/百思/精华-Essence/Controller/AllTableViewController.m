@@ -21,6 +21,7 @@
 @property(nonatomic, weak) UILabel *label;
 @property(nonatomic, retain) NSString *maxtime;
 @property(nonatomic, strong) CustomHTTPSessionManager *manager;
+@property(nonatomic, strong) NSArray *top_cmt_array;
 @end
 static NSString *const TopicCellId = @"topic";
 @implementation AllTableViewController
@@ -71,8 +72,8 @@ static NSString *const TopicCellId = @"topic";
     parmas[@"c"] = @"data";
     //发送请求
     [self.manager GET:CommonUrl parameters:parmas success:^(NSURLSessionDataTask *task, id responseObject) {
-
         self.tempArray = [NSMutableArray array];
+        self.top_cmt_array = [NSArray array];
         NSDictionary *dictionary = responseObject;
         //存储一下maxtime;
         self.maxtime = dictionary[@"info"][@"maxtime"];
@@ -81,7 +82,9 @@ static NSString *const TopicCellId = @"topic";
             [topic setValuesForKeysWithDictionary:dict];
             [self.tempArray addObject:topic];
         }
-        
+        for (NSDictionary *dic in responseObject[@"list"]) {
+            self.top_cmt_array = dic[@"top_cmt"];
+        }
         //刷新数据-不然不会再调用数据源方法
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];

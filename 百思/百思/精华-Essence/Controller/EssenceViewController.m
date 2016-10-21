@@ -79,6 +79,7 @@
    
 }
 - (void)setupTitleView{
+    
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.custom_width, 40)];
     titleView.backgroundColor = CustomColor(255.0f, 255.0f, 255.0f, 0.7);
     
@@ -159,8 +160,7 @@
 //添加子控制器的view
 - (void)addChildVC{
     NSInteger index = self.scrollView.contentOffset.x / self.scrollView.custom_width;
-   
-    
+
     //取出子控制器
     UIViewController *childVC = self.childViewControllers[index];
     if (childVC.view.superview) {

@@ -15,6 +15,8 @@
     self.tintColor = [UIColor whiteColor];
     //占位文字颜色
     self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:[UIColor lightTextColor]}];
+   
+    
 }
 
 //调用时刻：成为第一响应者

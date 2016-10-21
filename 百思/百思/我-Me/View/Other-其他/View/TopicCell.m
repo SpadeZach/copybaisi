@@ -31,11 +31,17 @@
     self.createdAtLabel.text = topic.created_at;
     self.text_label.text = topic.text;
     
-    
     [self buttonWithTitle:self.dingButton number:topic.ding placeholder:@"顶"];
     [self buttonWithTitle:self.caiButton number:topic.cai placeholder:@"踩"];
     [self buttonWithTitle:self.repostButton number:topic.repost placeholder:@"分享"];
     [self buttonWithTitle:self.commentButton number:topic.comment placeholder:@"评论"];
+    //处理评论
+    if (topic.top_cmt.count) {
+        //有最热评论
+//        self.topic
+    }else{
+        //没有最热评论
+    }
 }
 /*
  顶踩等按钮

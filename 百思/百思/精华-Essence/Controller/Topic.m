@@ -32,16 +32,14 @@ static NSCalendar *calendar_;
 }
 // 1分钟:刚刚 \10分钟前 \ 5小时前 \ 昨天\ 08-01 13:51:00  \ 2015-08-0113:51:00
 - (NSString *)created_at{
-    
-    
-
     fmt_.dateFormat = @"yyyy-MM-dd HH:mm:ss";
     //获得发帖日期 不能使用self self. 会retain先-1然后坏内存 _XX是直接指向
     NSDate *createdAtDate = [fmt_ dateFromString:_created_at];
     //是否今年
     if (createdAtDate.isThisYear) {
         //今天
-        if ([calendar_ isDateInToday:createdAtDate]) {
+//        [calendar_ isDateInToday:createdAtDate] IOS8.0
+        if (createdAtDate.isToday) {
             // 手机当前时间
             NSDate *nowDate = [NSDate date];
 
@@ -55,7 +53,7 @@ static NSCalendar *calendar_;
             }else{
                 return @"刚刚";
             }
-        }else if([calendar_ isDateInYesterday:createdAtDate]){
+        }else if(createdAtDate.isYesterday){
             //昨天
             fmt_.dateFormat = @"昨天 HH:mm:ss";
             return [fmt_ stringFromDate:createdAtDate];
