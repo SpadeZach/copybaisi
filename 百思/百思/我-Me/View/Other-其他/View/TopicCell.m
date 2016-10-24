@@ -38,9 +38,14 @@
     //处理评论
     if (topic.top_cmt.count) {
         //有最热评论
-//        self.topic
+        self.topCmtView.hidden = NO;
+        NSDictionary *comment = topic.top_cmt.firstObject;
+        NSString *username = comment[@"user"][@"username"];//用户名
+        NSString *content = comment[@"content"];//内容
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
     }else{
         //没有最热评论
+        self.topCmtView.hidden = YES;
     }
 }
 /*

@@ -46,6 +46,7 @@ static NSString *const TopicCellId = @"topic";
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     self.tableView.rowHeight = 250;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.top_cmt_array = [[NSArray alloc] init];
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([TopicCell class]) bundle:nil] forCellReuseIdentifier:TopicCellId];
 }
@@ -74,6 +75,7 @@ static NSString *const TopicCellId = @"topic";
     [self.manager GET:CommonUrl parameters:parmas success:^(NSURLSessionDataTask *task, id responseObject) {
         self.tempArray = [NSMutableArray array];
         self.top_cmt_array = [NSArray array];
+        
         NSDictionary *dictionary = responseObject;
         //存储一下maxtime;
         self.maxtime = dictionary[@"info"][@"maxtime"];
@@ -81,10 +83,20 @@ static NSString *const TopicCellId = @"topic";
             Topic *topic = [[Topic alloc] init];
             [topic setValuesForKeysWithDictionary:dict];
             [self.tempArray addObject:topic];
+            for (int i = 0; i <topic.top_cmt.count; i++) {
+                if (topic.top_cmt.count) {
+                    CustomLog(@"刷新%d",i);
+                }
+            }
         }
-        for (NSDictionary *dic in responseObject[@"list"]) {
-            self.top_cmt_array = dic[@"top_cmt"];
-        }
+//        for (NSDictionary *dic in responseObject[@"list"]) {
+//            self.top_cmt_array = dic[@"top_cmt"];
+//        }
+//        for (int i = 0; i < self.top_cmt_array.count; i++) {
+//            if (self.top_cmt_array.count) {
+//                CustomLog(@"刷新%d",i);
+//            }
+//        }
         //刷新数据-不然不会再调用数据源方法
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
@@ -108,7 +120,9 @@ static NSString *const TopicCellId = @"topic";
     parmas[@"c"] = @"data";
     parmas[@"maxtime"] = self.maxtime;
     //发送请求
+    
     [self.manager GET:CommonUrl parameters:parmas success:^(NSURLSessionDataTask *task, id responseObject) {
+//        CustomLog(@"%@",responseObject);
        //存储这页的maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
         NSDictionary *dictionary = responseObject;
@@ -116,7 +130,13 @@ static NSString *const TopicCellId = @"topic";
             Topic *topic = [[Topic alloc] init];
             [topic setValuesForKeysWithDictionary:dict];
             [self.tempArray addObject:topic];
+            for (int i = 0; i <topic.top_cmt.count; i++) {
+                if (topic.top_cmt.count) {
+                    CustomLog(@"下拉--%d",i);
+                }
+            }
         }
+       
         //刷新数据-不然不会再调用数据源方法
         [self.tableView reloadData];
         [self.tableView.mj_footer endRefreshing];
@@ -124,6 +144,11 @@ static NSString *const TopicCellId = @"topic";
         CustomLog(@"请求成功- %@",error);
         [self.tableView.mj_header endRefreshing];
     }];
+    for (int i = 0; i < self.top_cmt_array.count; i++) {
+        if (self.top_cmt_array.count) {
+            CustomLog(@"更多%d",i);
+        }
+    }
     
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
